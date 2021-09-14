@@ -1,0 +1,68 @@
+.buttons {
+    position: relative;
+    height: 350px;
+    overflow-x: hidden;
+}
+
+.laptop-btn, .twitter-btn, .linkedin-btn, .facebook-btn, .github-btn {
+    transition: width 0.5s;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    right: -240px;
+    color: $white-text;
+    &:hover {
+        width: 550px;
+    }
+}
+
+
+.laptop-btn {
+    background-color: #e17b77;
+    bottom: 250px;
+   
+}
+
+.twitter-btn {
+    background-color: #00aced;
+    bottom: 200px;
+   
+}
+
+.linkedin-btn {
+    background-color: #007bb6;
+    bottom: 150px;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    bottom: 100px;
+}
+
+.github-btn {
+    background-color: #333;
+    bottom: 50px;
+}
+
+.fa-laptop-code, .fa-twitter, .fa-linkedin-in, .fa-facebook-f, .fa-github  {
+    font-size: 20px;
+    color: white;
+    padding: 15px 40px 10px 20px;
+
+}
+
+.fa-laptop-code::before {
+    content: "\f5fc";
+}
+.fa-twitter::before {
+    content: "\f099";
+}
+.fa-linkedin-in::before {
+    content: "\f0e1";
+}
+.fa-facebook-f::before {
+    content: "\f39e";
+}
+.fa-github::before {
+    content: "\f09b";
+}

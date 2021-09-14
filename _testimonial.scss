@@ -1,0 +1,31 @@
+.testimonial {
+    margin: auto;
+    margin-bottom: 50px;
+    height: auto;
+    width: 400px;
+    padding: 35px;
+    background: linear-gradient(0deg,  #686de0 33%, white 0%);
+    font-size: 20px;
+    border-radius: 25px;
+    line-height: $more-line-height;
+    
+    &__photo-border {
+        display: block;
+        margin: 10px auto; 
+        border-color: white;
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+        height: 125px;
+    }
+    &__text--uppercase {
+        letter-spacing: 2px;
+        color: $white-text;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text--grey {
+        color:rgb(201, 201, 201);
+        text-align: center; 
+    }
+}

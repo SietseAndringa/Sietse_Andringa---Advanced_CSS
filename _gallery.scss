@@ -1,0 +1,39 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    justify-items: center;
+    &__frame {
+        position: relative;
+        margin: 5%;
+        border-radius: 15px;
+        overflow: hidden;
+        &:hover .gallery__frame--makeup {
+            filter: brightness(0);
+            opacity: 0.75;
+            transition-duration: 0.75s;
+            transform: scale(1.1);
+        }
+
+        &:hover .gallery__read-more-button {
+            display: block;
+        }
+    }
+    &__frame--makeup {
+        max-width: 100%;
+        max-height: auto;
+    
+    }
+    &__read-more-button {
+        display: none;
+        position: absolute;
+        top: 45%;
+        left: 37%;
+        width: auto;
+        height: auto;
+        padding: 0.5em 1em;
+        background-color:white;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
